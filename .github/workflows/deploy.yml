@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle install
+          bundle install --path vendor/bundle
 
       # Build the site using Jekyll
       - name: Build the Jekyll site
