@@ -315,16 +315,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-default-layout
-  jekyll-feed
-  jekyll-gist
-  jekyll-optional-front-matter
-  jekyll-paginate
-  jekyll-readme-index
-  jekyll-relative-links
-  jekyll-seo-tag
-  jekyll-sitemap
-  jekyll-titles-from-headings
 
 BUNDLED WITH
    2.6.6
