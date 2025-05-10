@@ -11,6 +11,7 @@ group :jekyll_plugins do
     gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
     gem 'jekyll-jupyter-notebook'
+    gem 'github-pages', group: :jekyll_plugins
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
