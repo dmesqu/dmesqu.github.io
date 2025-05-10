@@ -1,34 +1,61 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Welcome to my portfolio!
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p></p>
+    <p></p>
+    <p></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: false
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: false
+  limit:
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: false
+  limit:
 ---
 
-My name is David Mesquita, I am a Senior Computer Science Major finishing my Bachelors Degree at Farmingdale State College, I look always look forward to learning more and taking on new projects as I progress through this next year of education before I go out to look for a job.
+## About Me
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Hello! My name is **David Mesquita**. I am a Senior Computer Science major at **Farmingdale State College**, currently finishing my Bachelor's degree. I'm passionate about my education and always eager to learn more.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+---
+
+## Projects
+
+Here are some of my best projects:
+
+- 🔬 [CSC311 Research Presentation](https://github.com/dmesqu/CSC311ResearchPresentation) - Quantum Computing in Java
+- 🧠 [CSE218 Final Project](https://github.com/dmesqu/CSE218-Final)  - Social Media Mobile Application
+- ⚡ [Electronic Circuit Simulator](https://github.com/AsimRazzaq01/ElectronicCircuitSimulator) - Lets you create and test circuts in real time
+
+---
+
+## What I Can Do
+
+- 💻 **Java Desktop App Development** – Desktop applications using Java, JavaFX, SceneBuilder, and css.
+- 👨‍🏫 **Tutoring** – Help in Computer Science and college-level math courses.
+- 🎨 **UI/UX Design** – Design-focused thinking and prototyping using tools like Figma.
+- 🔥 **Electronics** - Proficent with PCBs and soldering.
+
+---
+
+## Connect with Me
+
+Feel free to connect with me professionally on [LinkedIn](https://www.linkedin.com/in/david-mesquita-97853a290/a).
+
+---
+
+Thanks for visiting my portfolio!.
