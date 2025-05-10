@@ -1,35 +1,38 @@
-name: Build and Deploy Jekyll site
+name: Build and Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # or "master", use your default branch
+    branches:
+      - main  # Trigger deployment on push to the 'main' branch
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest  # Choose an environment to run your job (Ubuntu in this case)
 
     steps:
-    - name: 📥 Checkout source
-      uses: actions/checkout@v4
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: 🧰 Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2' # or whatever works with your site
-        bundler-cache: true
+      # Set up Ruby environment
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0  # Choose the Ruby version you need for Jekyll
 
-    - name: 💎 Install dependencies
-      run: bundle install
+      # Install dependencies from Gemfile
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
 
-    - name: 🏗️ Build site
-      run: bundle exec jekyll build
+      # Build the site using Jekyll
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build
 
-    - name: 🚫 Add .nojekyll
-      run: touch _site/.nojekyll
-
-    - name: 🚀 Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
-        publish_branch: gh-pages
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # The branch where the site is deployed
+          folder: _site  # The folder to push to the gh-pages branch
